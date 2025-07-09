@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vinay S | AI/ML Engineer</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      background: #f4f7fc;
+      color: #333;
+      animation: fadeIn 1s ease-in;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    header {
+      background: linear-gradient(to right, #1e3a8a, #2563eb);
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      font-weight: 300;
+    }
+
+    nav {
+      margin-top: 15px;
+    }
+
+    nav a {
+      color: #e0e0e0;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #fff;
+    }
+
+    .section {
+      padding: 50px 20px;
+      max-width: 960px;
+      margin: auto;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      border-left: 5px solid #2563eb;
+      padding-left: 10px;
+    }
+
+    .project, .skills, .contact-info {
+      background: #ffffff;
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .project:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    }
+
+    .skills ul {
+      list-style-type: square;
+      padding-left: 20px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #2563eb;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 6px;
+      text-decoration: none;
+      margin-top: 10px;
+      transition: background 0.3s ease;
+    }
+
+    .btn:hover {
+      background: #1d4ed8;
+    }
+
+    footer {
+      background: #1e3a8a;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    @media (max-width: 768px) {
+      header h1 { font-size: 2rem; }
+      nav a { display: block; margin: 10px 0; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Vinay S</h1>
+    <p>AI/ML Engineering Student | Data Science Enthusiast</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#resume">Resume</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="about" class="section">
+    <h2>About Me</h2>
+    <div class="project">
+      <p>I’m a final-year engineering student specializing in AI/ML with practical experience in data-driven solutions like carbon trackers, recommendation engines, and satellite-based deforestation detection. Passionate about real-world applications of data science.</p>
+    </div>
+  </section>
+
+  <section id="projects" class="section">
+    <h2>Projects</h2>
+    <div class="project">
+      <h3>Carbon Emission & Energy Efficiency Tracker</h3>
+      <p>Built a system to analyze and predict carbon emissions based on energy usage patterns using Python, Flask, and ML techniques.</p>
+      <a href="https://github.com/yaniv-11/Carbon_emmission_energy_efficiency_tracker" class="btn" target="_blank">View on GitHub</a>
+    </div>
+    <div class="project">
+      <h3>Blend Attire - Outfit Recommendation System</h3>
+      <p>Used collaborative filtering and CNNs to personalize outfit recommendations. Integrated model with Flask + Streamlit UI.</p>
+      <a href="https://github.com/yaniv-11/Blend-Attire" class="btn" target="_blank">View on GitHub</a>
+    </div>
+    <div class="project">
+      <h3>Deforestation Tracking System</h3>
+      <p>Processed satellite images using OpenCV + HSV analysis to detect tree density changes with real-time Flask web interface.</p>
+    </div>
+    <div class="project">
+      <h3>Task Tracker (Internship Project)</h3>
+      <p>Developed a modular Flask + SQLite task tracker app during internship at Vault of Codes. Emphasis on clean Python scripting.</p>
+      <a href="https://github.com/yaniv-11/TASK-TRACKER" class="btn" target="_blank">View on GitHub</a>
+    </div>
+  </section>
+
+  <section id="skills" class="section">
+    <h2>Technical Skills</h2>
+    <div class="skills">
+      <ul>
+        <li>Python, SQL, C, JavaScript</li>
+        <li>Scikit-learn, OpenCV, Pandas, NumPy</li>
+        <li>Flask, Streamlit, RESTful APIs</li>
+        <li>PowerBI, Tableau, Data Visualization</li>
+        <li>MySQL, MongoDB, SQLite, PostgreSQL</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="resume" class="section">
+    <h2>Resume</h2>
+    <div class="project">
+      <p>You can view and download my resume below:</p>
+      <a href="vinay resume.pdf" class="btn" download>Download Resume (PDF)</a>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <h2>Contact</h2>
+    <div class="contact-info">
+      <p>Email: <a href="mailto:vinays.6360@gmail.com">vinays.6360@gmail.com</a></p>
+      <p>GitHub: <a href="https://github.com/yaniv-11" target="_blank">github.com/yaniv-11</a></p>
+      <p>LinkedIn: <a href="https://linkedin.com/in/vinay-s-354b7b2b2" target="_blank">linkedin.com/in/vinay-s-354b7b2b2</a></p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Vinay S. All rights reserved.</p>
+  </footer>
+</body>
+</html>
