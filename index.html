@@ -13,7 +13,10 @@
       color: #e2e8f0;
       scroll-behavior: smooth;
     }
-    a { color: #60a5fa; text-decoration: none; }
+    a { text-decoration: none; }
+    a[href^="mailto"], a[href*="github.com"], a[href*="linkedin.com"] {
+      color: #60a5fa;
+    }
     a:hover { color: #3b82f6; }
     header {
       padding: 80px 20px 40px;
@@ -123,9 +126,11 @@
     </div>
   </section>
 
-  $1
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="grid">
       <div class="card">
-        <h3> Task Tracker App  - Internship Project</h3>
+        <h3>Internship Task Tracker App</h3>
         <p>Built during a Python internship at Vault of Codes, this project involved developing a productivity-focused task tracking system using Flask, SQLite, and modular Python scripting techniques.</p>
         <a href="https://github.com/yaniv-11/TASK-TRACKER" class="btn" target="_blank">GitHub</a>
       </div>
