@@ -1,117 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vinay S | AI/ML Engineer</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vinay S | AI/ML Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #0e0e0e;
+      color: #ffffff;
       scroll-behavior: smooth;
     }
-
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      line-height: 1.6;
-      background: #f4f7fc;
-      color: #333;
-      animation: fadeIn 1s ease-in;
-    }
-
-    @keyframes fadeIn {
-      from { opacity: 0; }
-      to { opacity: 1; }
-    }
-
     header {
-      background: linear-gradient(to right, #1e3a8a, #2563eb);
-      color: white;
-      padding: 40px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
       text-align: center;
+      padding: 100px 20px 60px;
+      background: linear-gradient(135deg, #1e3a8a, #2563eb);
+      animation: fadeIn 1.5s ease-in-out;
     }
-
-    header h1 {
-      font-size: 2.5rem;
-      margin-bottom: 10px;
-    }
-
-    header p {
-      font-size: 1.2rem;
-      font-weight: 300;
-    }
-
-    nav {
-      margin-top: 15px;
-    }
-
+    header h1 { font-size: 3rem; margin-bottom: 10px; font-weight: 700; }
+    header p { font-size: 1.2rem; font-weight: 300; margin-bottom: 20px; }
     nav a {
-      color: #e0e0e0;
+      color: #fff;
       text-decoration: none;
       margin: 0 15px;
       font-weight: 500;
-      transition: color 0.3s;
+      transition: color 0.3s ease;
     }
+    nav a:hover { color: #cbd5e1; }
 
-    nav a:hover {
-      color: #fff;
-    }
-
-    .section {
-      padding: 50px 20px;
-      max-width: 960px;
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
       margin: auto;
     }
-
     h2 {
       font-size: 2rem;
-      margin-bottom: 20px;
-      border-left: 5px solid #2563eb;
-      padding-left: 10px;
+      border-left: 4px solid #3b82f6;
+      padding-left: 12px;
+      margin-bottom: 30px;
     }
-
-    .project, .skills, .contact-info {
-      background: #ffffff;
+    .card {
+      background-color: #1f2937;
       padding: 20px;
       border-radius: 10px;
       margin-bottom: 20px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      transition: all 0.3s ease-in-out;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
     }
-
-    .project:hover {
+    .card:hover {
       transform: translateY(-5px);
-      box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+      box-shadow: 0 0 20px rgba(59, 130, 246, 0.5);
     }
-
-    .skills ul {
-      list-style-type: square;
-      padding-left: 20px;
-    }
-
     .btn {
       display: inline-block;
-      background: #2563eb;
-      color: #fff;
       padding: 10px 20px;
-      border-radius: 6px;
+      background-color: #3b82f6;
+      color: #fff;
+      border-radius: 5px;
       text-decoration: none;
+      transition: background-color 0.3s ease;
       margin-top: 10px;
-      transition: background 0.3s ease;
     }
-
-    .btn:hover {
-      background: #1d4ed8;
-    }
-
+    .btn:hover { background-color: #1d4ed8; }
     footer {
-      background: #1e3a8a;
-      color: white;
       text-align: center;
-      padding: 20px;
+      padding: 30px 20px;
+      background-color: #111827;
+      font-size: 0.9rem;
     }
-
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translateY(20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
     @media (max-width: 768px) {
       header h1 { font-size: 2rem; }
       nav a { display: block; margin: 10px 0; }
@@ -121,78 +87,68 @@
 <body>
   <header>
     <h1>Vinay S</h1>
-    <p>AI/ML Engineering Student | Data Science Enthusiast</p>
+    <p>AI/ML Engineer | Full-Stack Data Science Projects</p>
     <nav>
       <a href="#about">About</a>
       <a href="#projects">Projects</a>
-      <a href="#skills">Skills</a>
-      <a href="#resume">Resume</a>
+      <a href="#services">Services</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
 
-  <section id="about" class="section">
+  <section id="about">
     <h2>About Me</h2>
-    <div class="project">
-      <p>I’m a final-year engineering student specializing in AI/ML with practical experience in data-driven solutions like carbon trackers, recommendation engines, and satellite-based deforestation detection. Passionate about real-world applications of data science.</p>
+    <div class="card">
+      <p>I’m an AI/ML engineering student with real-world experience building end-to-end data-driven applications. From computer vision projects to recommendation engines and carbon emission tracking, I build things that solve real problems.</p>
     </div>
   </section>
 
-  <section id="projects" class="section">
-    <h2>Projects</h2>
-    <div class="project">
-      <h3>Carbon Emission & Energy Efficiency Tracker</h3>
-      <p>Built a system to analyze and predict carbon emissions based on energy usage patterns using Python, Flask, and ML techniques.</p>
-      <a href="https://github.com/yaniv-11/Carbon_emmission_energy_efficiency_tracker" class="btn" target="_blank">View on GitHub</a>
+  <section id="projects">
+    <h2>Highlighted Projects</h2>
+    <div class="card">
+      <h3>Deforestation Monitoring System</h3>
+      <p>Tracks forest cover using live satellite images and OpenCV HSV analysis. Flask backend + interactive map UI.</p>
+      <a href="https://github.com/yaniv-11/deforestation-monitor" class="btn" target="_blank">View GitHub</a>
     </div>
-    <div class="project">
-      <h3>Blend Attire - Outfit Recommendation System</h3>
-      <p>Used collaborative filtering and CNNs to personalize outfit recommendations. Integrated model with Flask + Streamlit UI.</p>
-      <a href="https://github.com/yaniv-11/Blend-Attire" class="btn" target="_blank">View on GitHub</a>
+    <div class="card">
+      <h3>Carbon Emission & Energy Tracker</h3>
+      <p>Predicts energy usage and carbon output using ML models, visualized with a real-time dashboard (Flask + Pandas).</p>
+      <a href="https://github.com/yaniv-11/Carbon_emmission_energy_efficiency_tracker" class="btn" target="_blank">View GitHub</a>
     </div>
-    <div class="project">
-      <h3>Deforestation Tracking System</h3>
-      <p>Processed satellite images using OpenCV + HSV analysis to detect tree density changes with real-time Flask web interface.</p>
-    </div>
-    <div class="project">
-      <h3>Task Tracker (Internship Project)</h3>
-      <p>Developed a modular Flask + SQLite task tracker app during internship at Vault of Codes. Emphasis on clean Python scripting.</p>
-      <a href="https://github.com/yaniv-11/TASK-TRACKER" class="btn" target="_blank">View on GitHub</a>
+    <div class="card">
+      <h3>Outfit Recommendation System</h3>
+      <p>Combines CNN and collaborative filtering to suggest outfits. Built with Python, Flask, Streamlit, and Scikit-learn.</p>
+      <a href="https://github.com/yaniv-11/Blend-Attire" class="btn" target="_blank">View GitHub</a>
     </div>
   </section>
 
-  <section id="skills" class="section">
-    <h2>Technical Skills</h2>
-    <div class="skills">
-      <ul>
-        <li>Python, SQL, C, JavaScript</li>
-        <li>Scikit-learn, OpenCV, Pandas, NumPy</li>
-        <li>Flask, Streamlit, RESTful APIs</li>
-        <li>PowerBI, Tableau, Data Visualization</li>
-        <li>MySQL, MongoDB, SQLite, PostgreSQL</li>
-      </ul>
+  <section id="services">
+    <h2>What I Do</h2>
+    <div class="card">
+      <h3>Web Development</h3>
+      <p>Flask, REST APIs, Streamlit UIs, and full-stack ML apps</p>
+    </div>
+    <div class="card">
+      <h3>Machine Learning</h3>
+      <p>Data cleaning, model building, and deployment with Scikit-learn</p>
+    </div>
+    <div class="card">
+      <h3>Computer Vision</h3>
+      <p>Real-time image processing and classification with OpenCV, CNN</p>
     </div>
   </section>
 
-  <section id="resume" class="section">
-    <h2>Resume</h2>
-    <div class="project">
-      <p>You can view and download my resume below:</p>
-      <a href="vinay resume.pdf" class="btn" download>Download Resume (PDF)</a>
-    </div>
-  </section>
-
-  <section id="contact" class="section">
-    <h2>Contact</h2>
-    <div class="contact-info">
+  <section id="contact">
+    <h2>Get in Touch</h2>
+    <div class="card">
       <p>Email: <a href="mailto:vinays.6360@gmail.com">vinays.6360@gmail.com</a></p>
-      <p>GitHub: <a href="https://github.com/yaniv-11" target="_blank">github.com/yaniv-11</a></p>
-      <p>LinkedIn: <a href="https://linkedin.com/in/vinay-s-354b7b2b2" target="_blank">linkedin.com/in/vinay-s-354b7b2b2</a></p>
+      <p>GitHub: <a href="https://github.com/yaniv-11" target="_blank">@yaniv-11</a></p>
+      <p>LinkedIn: <a href="https://linkedin.com/in/vinay-s-354b7b2b2" target="_blank">/vinay-s-354b7b2b2</a></p>
     </div>
   </section>
 
   <footer>
-    <p>&copy; 2025 Vinay S. All rights reserved.</p>
+    &copy; 2025 Vinay S — Built with HTML + CSS
   </footer>
 </body>
 </html>
