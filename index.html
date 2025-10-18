@@ -1,201 +1,122 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vinay S | AI/ML Engineer Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Vinay S — AI/ML Portfolio</title>
+  <meta name="description" content="Portfolio of Vinay S — AI/ML intern, CV, NLP, RAG, deployment." />
   <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body {
-      font-family: 'Inter', sans-serif;
-      background-color: #0b0f19;
-      color: #e2e8f0;
-      scroll-behavior: smooth;
-    }
-    a { text-decoration: none; }
-    a[href^="mailto"], a[href*="github.com"], a[href*="linkedin.com"] {
-      color: #60a5fa;
-    }
-    a:hover { color: #3b82f6; }
-    header {
-      padding: 80px 20px 40px;
-      background: linear-gradient(to right, #1f2937, #111827);
-      text-align: center;
-    }
-    header h1 {
-      font-size: 3rem;
-      font-weight: 800;
-      color: #ffffff;
-    }
-    header p {
-      font-size: 1.2rem;
-      margin-top: 10px;
-      color: #94a3b8;
-    }
-    nav {
-      margin-top: 25px;
-    }
-    nav a {
-      margin: 0 15px;
-      font-weight: 600;
-      color: #cbd5e1;
-    }
-    nav a:hover { color: #3b82f6; }
-
-    section {
-      padding: 60px 20px;
-      max-width: 1000px;
-      margin: auto;
-    }
-    h2 {
-      font-size: 2rem;
-      font-weight: 800;
-      color: #f1f5f9;
-      margin-bottom: 30px;
-      border-left: 6px solid #3b82f6;
-      padding-left: 15px;
-    }
-    .card {
-      background-color: #1e293b;
-      padding: 25px;
-      border-radius: 12px;
-      margin-bottom: 25px;
-      box-shadow: 0 0 10px rgba(30, 41, 59, 0.5);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-    .card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 10px 20px rgba(59, 130, 246, 0.3);
-    }
-    .card h3 {
-      font-size: 1.3rem;
-      margin-bottom: 10px;
-      color: #e2e8f0;
-    }
-    .card p {
-      font-size: 1rem;
-      line-height: 1.6;
-      color: #cbd5e1;
-    }
-    .btn {
-      display: inline-block;
-      margin-top: 15px;
-      background-color: #3b82f6;
-      color: #fff;
-      padding: 10px 20px;
-      border-radius: 8px;
-      transition: background 0.3s;
-    }
-    .btn:hover { background-color: #2563eb; }
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 20px;
-    }
-    footer {
-      text-align: center;
-      background-color: #0f172a;
-      padding: 40px 20px;
-      color: #64748b;
-      font-size: 0.9rem;
-    }
-    @media (max-width: 768px) {
-      header h1 { font-size: 2rem; }
-      nav a { display: block; margin: 10px 0; }
-    }
+    :root{--bg:#0f1724;--card:#0b1220;--accent:#06b6d4;--muted:#9aa3b2;--glass:rgba(255,255,255,0.03)}
+    html,body{height:100%;margin:0;font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;color:#e6eef6;background:linear-gradient(180deg,#071027 0%, #07122a 100%);}
+    .container{max-width:980px;margin:36px auto;padding:28px;background:linear-gradient(180deg,rgba(255,255,255,0.02),transparent);border-radius:14px;box-shadow:0 6px 30px rgba(2,6,23,0.6);}
+    .row{display:flex;gap:24px;align-items:flex-start}
+    .left{width:260px}
+    .profile{background:var(--card);padding:18px;border-radius:12px;text-align:center;backdrop-filter: blur(6px);}
+    .profile img{width:160px;height:160px;object-fit:cover;border-radius:50%;border:3px solid rgba(255,255,255,0.06)}
+    h1{margin:12px 0 6px;font-size:22px}
+    p.lead{margin:0;color:var(--muted);font-size:14px}
+    .contact{margin-top:12px;text-align:left}
+    .contact a{display:inline-block;color:var(--accent);text-decoration:none;margin-right:8px;font-weight:600}
+    .card{background:var(--glass);padding:18px;border-radius:12px;margin-bottom:16px}
+    .section h2{margin:0 0 12px;font-size:18px}
+    ul{padding-left:18px;margin:8px 0}
+    .skills span{display:inline-block;padding:6px 10px;margin:6px 6px 0 0;border-radius:999px;background:rgba(255,255,255,0.03);font-size:13px}
+    .projects a{color:var(--accent);text-decoration:none;font-weight:600}
+    .btn{display:inline-block;padding:10px 14px;border-radius:10px;background:linear-gradient(90deg,var(--accent),#0ea5a6);color:#052025;text-decoration:none;font-weight:700;margin-top:8px}
+    footer{margin-top:18px;color:var(--muted);font-size:13px;text-align:center}
+    @media(max-width:800px){.row{flex-direction:column}.left{width:100%}}
   </style>
 </head>
 <body>
-  <header>
-    <h1>Vinay S</h1>
-    <p>AI/ML Engineer | Building intelligent and impactful solutions</p>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#skills">Skills</a>
-      <a href="#services">Services</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
+  <div class="container">
+    <div class="row">
+      <div class="left">
+        <div class="profile card">
+          <!-- Replace assets/profile.jpg with your LinkedIn photo file (named profile.jpg) inside repo /assets/ -->
+          <img src="assets/profile.jpg" alt="Vinay S" />
+          <h1>Vinay S</h1>
+          <p class="lead">AI/ML Intern — Computer Vision, NLP, RAG & Deployments</p>
+          <div class="contact">
+            <div><strong>Phone:</strong> +91 6360974188</div>
+            <div><strong>Email:</strong> <a href="mailto:vinays.6360@gmail.com">vinays.6360@gmail.com</a></div>
+            <div style="margin-top:8px">
+              <a href="https://github.com/yaniv-11" target="_blank">GitHub</a> •
+              <a href="https://www.linkedin.com/in/vinay-s-354b7b2b2" target="_blank">LinkedIn</a>
+            </div>
+            <a class="btn" href="vinay_resume.pdf" download>Download Resume (PDF)</a>
+          </div>
+        </div>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <div class="card">
-      <p>I’m a passionate AI/ML engineering student with hands-on experience in deploying ML applications that tackle environmental and user-centric problems. I build systems that range from satellite-powered deforestation monitoring to personalized recommendation engines.</p>
+        <div class="card">
+          <h3 style="margin:0 0 8px">Skills</h3>
+          <div class="skills">
+            <span>Python</span><span>TensorFlow</span><span>PyTorch</span><span>scikit-learn</span>
+            <span>LangChain</span><span>FAISS</span><span>RAG</span><span>Flask</span>
+            <span>Streamlit</span><span>SQL / MongoDB</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3 style="margin:0 0 8px">Education</h3>
+          <div><strong>B.E. Computer Science &amp; Engineering (AI &amp; ML)</strong></div>
+          <div>Sai Vidya Institute of Technology — CGPA: 8.6</div>
+        </div>
+      </div>
+
+      <div class="right" style="flex:1">
+        <div class="card">
+          <div style="display:flex;justify-content:space-between;align-items:center">
+            <h2>Experience</h2>
+            <div style="color:var(--muted);font-size:13px">Jul 2025 — Aug 2025</div>
+          </div>
+
+          <div style="margin-top:8px">
+            <strong>AI &amp; ML Intern (Remote)</strong> — Edunet Foundation
+            <ul>
+              <li>Built an end-to-end ML pipeline covering preprocessing, feature engineering, training &amp; evaluation.</li>
+              <li>Automated model selection &amp; reporting, reducing evaluation time by ~40% to speed model comparisons.</li>
+            </ul>
+
+            <strong>Python Programming Intern (Remote)</strong> — Vault of Codes (Jun 2025)
+            <ul>
+              <li>Built Task Tracker web app with Flask + SQLite, implemented CRUD operations and REST API integration.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="card projects">
+          <h2>Selected Projects</h2>
+          <ul>
+            <li><a href="https://github.com/yaniv-11/langgraph-tools-chatbot" target="_blank">LangGraph-Tools-Chatbot</a> — AI conversational assistant (LangGraph + Streamlit) with tools integration and LangSmith observability.</li>
+            <li><a href="https://rag-chatbot-hppmxsr7rqebntzaqwzro9.streamlit.app/" target="_blank">VectorTalk (Live)</a> — RAG chatbot (Streamlit) with FAISS + Hugging Face LLM for PDF Q&A.</li>
+            <li><a href="https://github.com/yaniv-11/RAG-chatbot" target="_blank">RAG Chatbot (Github)</a> — RAG pipeline & vector store implementation.</li>
+            <li><a href="https://github.com/yaniv-11/Blend-Attire" target="_blank">Blend Attire</a> — Hybrid outfit recommender combining collaborative filtering and CNN visual models.</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h2>Hackathons & Highlights</h2>
+          <ul>
+            <li>Deforestation Tracking System — Satellite imagery processed with OpenCV & HSV (92% accuracy).</li>
+            <li>Prediction Model — EDA, feature engineering and XGBoost (~80% accuracy).</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h2>Certifications</h2>
+          <ul>
+            <li>OCI Generative AI Professional — Oracle</li>
+            <li>AI Fundamentals — IBM</li>
+            <li>Python — Geeks for Geeks</li>
+            <li>Data Analytics Essentials — Cisco</li>
+          </ul>
+        </div>
+
+        <footer>
+          <div>Designed &amp; maintained by Vinay S • <a href="https://github.com/yaniv-11" style="color:var(--accent)">github.com/yaniv-11</a></div>
+        </footer>
+      </div>
     </div>
-  </section>
-
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="grid">
-      <div class="card">
-        <h3>Internship Task Tracker App</h3>
-        <p>Built during a Python internship at Vault of Codes, this project involved developing a productivity-focused task tracking system using Flask, SQLite, and modular Python scripting techniques.</p>
-        <a href="https://github.com/yaniv-11/TASK-TRACKER" class="btn" target="_blank">GitHub</a>
-      </div>
-      <div class="card">
-        <h3>Deforestation Monitoring System</h3>
-        <p>Tracks forest loss using live satellite imagery and OpenCV analysis. Built with Flask and real-time APIs.</p>
-        <a href="https://github.com/yaniv-11/Carbon_emmission_energy_efficiency_tracker" class="btn" target="_blank">GitHub</a>
-      </div>
-      <div class="card">
-        <h3>Carbon Emission Tracker</h3>
-        <p>Predictive analytics tool for energy usage and carbon output, powered by Scikit-learn and Flask.</p>
-        <a href="https://github.com/yaniv-11/Blend-Attire" class="btn" target="_blank">GitHub</a>
-      </div>
-      <div class="card">
-        <h3>Outfit Recommendation Engine</h3>
-        <p>Hybrid recommendation system using collaborative filtering and CNN. Deployed via Streamlit.</p>
-        <a href="https://github.com/yaniv-11" class="btn" target="_blank">GitHub</a>
-      </div>
-      <div class="card">
-        <h3>Health Insights from Lifestyle Patterns  </h3>
-        <p>Analyzed 100,000+ health records with 49 features to assess lifestyle and physiological impacts on health, performing EDA, data preprocessing, and statistical tests. Key predictors identified included work hours, sleep quality, stress level, and physical activity through hypothesis testing and Random Forest feature importance</p>
-        <a href="https://github.com/yaniv-11/Health-Insights-from-Lifestyle-Patterns-" class="btn" target="_blank">GitHub</a>
-      </div>
-    </div>
-  </section>
-
-  <section id="skills">
-    <h2>Technical Stack</h2>
-    <div class="grid">
-      <div class="card"><p><strong>Languages:</strong> Python, SQL, JavaScript</p></div>
-      <div class="card"><p><strong>Libraries:</strong> Pandas, NumPy, Scikit-learn, OpenCV</p></div>
-      <div class="card"><p><strong>Frameworks:</strong> Flask, Streamlit, RESTful APIs</p></div>
-      <div class="card"><p><strong>Tools:</strong> Git, VSCode, Jupyter, PowerBI, Tableau</p></div>
-    </div>
-  </section>
-
-  <section id="services">
-    <h2>What I Offer</h2>
-    <div class="grid">
-      <div class="card">
-        <h3>Machine Learning</h3>
-        <p>Custom ML models, evaluation, optimization, and deployment for real-world use cases.</p>
-      </div>
-      <div class="card">
-        <h3>Full-Stack Deployment</h3>
-        <p>Deploy intelligent apps using Flask, REST APIs, and cloud-ready architecture.</p>
-      </div>
-      <div class="card">
-        <h3>Computer Vision</h3>
-        <p>Real-time object detection, image processing, and satellite data interpretation.</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="contact">
-    <h2>Connect With Me</h2>
-    <div class="card">
-      <p>Email: <a href="mailto:vinays.6360@gmail.com">vinays.6360@gmail.com</a></p>
-      <p>GitHub: <a href="https://github.com/yaniv-11" target="_blank">github.com/yaniv-11</a></p>
-      <p>LinkedIn: <a href="https://linkedin.com/in/vinay-s-354b7b2b2" target="_blank">linkedin.com/in/vinay-s-354b7b2b2</a></p>
-    </div>
-  </section>
-
-  <footer>
-    &copy; 2025 Vinay S. Designed for performance and impact.
-  </footer>
+  </div>
 </body>
 </html>
