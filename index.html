@@ -2,121 +2,155 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Vinay S — AI/ML Portfolio</title>
-  <meta name="description" content="Portfolio of Vinay S — AI/ML intern, CV, NLP, RAG, deployment." />
-  <style>
-    :root{--bg:#0f1724;--card:#0b1220;--accent:#06b6d4;--muted:#9aa3b2;--glass:rgba(255,255,255,0.03)}
-    html,body{height:100%;margin:0;font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;color:#e6eef6;background:linear-gradient(180deg,#071027 0%, #07122a 100%);}
-    .container{max-width:980px;margin:36px auto;padding:28px;background:linear-gradient(180deg,rgba(255,255,255,0.02),transparent);border-radius:14px;box-shadow:0 6px 30px rgba(2,6,23,0.6);}
-    .row{display:flex;gap:24px;align-items:flex-start}
-    .left{width:260px}
-    .profile{background:var(--card);padding:18px;border-radius:12px;text-align:center;backdrop-filter: blur(6px);}
-    .profile img{width:160px;height:160px;object-fit:cover;border-radius:50%;border:3px solid rgba(255,255,255,0.06)}
-    h1{margin:12px 0 6px;font-size:22px}
-    p.lead{margin:0;color:var(--muted);font-size:14px}
-    .contact{margin-top:12px;text-align:left}
-    .contact a{display:inline-block;color:var(--accent);text-decoration:none;margin-right:8px;font-weight:600}
-    .card{background:var(--glass);padding:18px;border-radius:12px;margin-bottom:16px}
-    .section h2{margin:0 0 12px;font-size:18px}
-    ul{padding-left:18px;margin:8px 0}
-    .skills span{display:inline-block;padding:6px 10px;margin:6px 6px 0 0;border-radius:999px;background:rgba(255,255,255,0.03);font-size:13px}
-    .projects a{color:var(--accent);text-decoration:none;font-weight:600}
-    .btn{display:inline-block;padding:10px 14px;border-radius:10px;background:linear-gradient(90deg,var(--accent),#0ea5a6);color:#052025;text-decoration:none;font-weight:700;margin-top:8px}
-    footer{margin-top:18px;color:var(--muted);font-size:13px;text-align:center}
-    @media(max-width:800px){.row{flex-direction:column}.left{width:100%}}
-  </style>
+  <meta name="description" content="Vinay S — AI/ML Intern. CV, projects, RAG, NLP, Computer Vision." />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="container">
-    <div class="row">
-      <div class="left">
-        <div class="profile card">
-          <!-- Replace assets/profile.jpg with your LinkedIn photo file (named profile.jpg) inside repo /assets/ -->
-          <img src="assets/profile.jpg" alt="Vinay S" />
-          <h1>Vinay S</h1>
-          <p class="lead">AI/ML Intern — Computer Vision, NLP, RAG & Deployments</p>
-          <div class="contact">
-            <div><strong>Phone:</strong> +91 6360974188</div>
-            <div><strong>Email:</strong> <a href="mailto:vinays.6360@gmail.com">vinays.6360@gmail.com</a></div>
-            <div style="margin-top:8px">
-              <a href="https://github.com/yaniv-11" target="_blank">GitHub</a> •
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">Vinay S</div>
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+        <a class="btn" href="vinay_resume.pdf" download>Resume</a>
+      </nav>
+      <button class="nav-toggle" aria-label="toggle navigation">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section id="hero" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-left">
+          <h1>Hi — I’m <span class="accent">Vinay S</span></h1>
+          <p class="lead">AI/ML enthusiast building practical systems in NLP, Computer Vision, and Retrieval-Augmented Generation (RAG). I ship full pipelines — model → infra → app.</p>
+          <p class="cta">
+            <a class="primary" href="#projects">View Projects</a>
+            <a class="ghost" href="https://github.com/yaniv-11" target="_blank">GitHub</a>
+          </p>
+          <ul class="mini">
+            <li><strong>Location:</strong> India</li>
+            <li><strong>Email:</strong> <a href="mailto:vinays.6360@gmail.com">vinays.6360@gmail.com</a></li>
+          </ul>
+        </div>
+        <div class="hero-right">
+          <div class="card profile-card">
+            <img src="assets/profile.jpg" alt="Vinay S" class="profile-photo" />
+            <h2>Vinay S</h2>
+            <p class="muted">AI/ML Intern — CV, NLP, RAG, Deployments</p>
+            <div class="links">
+              <a href="https://github.com/yaniv-11" target="_blank">GitHub</a>
               <a href="https://www.linkedin.com/in/vinay-s-354b7b2b2" target="_blank">LinkedIn</a>
             </div>
-            <a class="btn" href="vinay_resume.pdf" download>Download Resume (PDF)</a>
+            <a class="download" href="vinay_resume.pdf" download>Download Resume</a>
           </div>
-        </div>
-
-        <div class="card">
-          <h3 style="margin:0 0 8px">Skills</h3>
-          <div class="skills">
-            <span>Python</span><span>TensorFlow</span><span>PyTorch</span><span>scikit-learn</span>
-            <span>LangChain</span><span>FAISS</span><span>RAG</span><span>Flask</span>
-            <span>Streamlit</span><span>SQL / MongoDB</span>
-          </div>
-        </div>
-
-        <div class="card">
-          <h3 style="margin:0 0 8px">Education</h3>
-          <div><strong>B.E. Computer Science &amp; Engineering (AI &amp; ML)</strong></div>
-          <div>Sai Vidya Institute of Technology — CGPA: 8.6</div>
         </div>
       </div>
+    </section>
 
-      <div class="right" style="flex:1">
-        <div class="card">
-          <div style="display:flex;justify-content:space-between;align-items:center">
-            <h2>Experience</h2>
-            <div style="color:var(--muted);font-size:13px">Jul 2025 — Aug 2025</div>
+    <section id="about" class="section container">
+      <div class="section-inner">
+        <h2>About</h2>
+        <p>I build and ship machine learning systems — from dataset cleaning and model training to deployment and monitoring. Experience working with Transformers, CNNs, RAG pipelines (FAISS), and web apps (Flask / Streamlit).</p>
+
+        <div class="cards-grid">
+          <div class="card">
+            <h3>Skills</h3>
+            <div class="tags">
+              <span>Python</span><span>PyTorch</span><span>TensorFlow</span><span>scikit-learn</span>
+              <span>LangChain</span><span>FAISS</span><span>RAG</span><span>Flask</span>
+            </div>
           </div>
 
-          <div style="margin-top:8px">
-            <strong>AI &amp; ML Intern (Remote)</strong> — Edunet Foundation
-            <ul>
-              <li>Built an end-to-end ML pipeline covering preprocessing, feature engineering, training &amp; evaluation.</li>
-              <li>Automated model selection &amp; reporting, reducing evaluation time by ~40% to speed model comparisons.</li>
-            </ul>
+          <div class="card">
+            <h3>Education</h3>
+            <p><strong>B.E. Computer Science &amp; Engineering</strong><br/>Sai Vidya Institute of Technology — CGPA: 8.6</p>
+          </div>
 
-            <strong>Python Programming Intern (Remote)</strong> — Vault of Codes (Jun 2025)
+          <div class="card">
+            <h3>Certifications</h3>
             <ul>
-              <li>Built Task Tracker web app with Flask + SQLite, implemented CRUD operations and REST API integration.</li>
+              <li>OCI Generative AI Professional — Oracle</li>
+              <li>AI Fundamentals — IBM</li>
+              <li>Python — GeeksforGeeks</li>
             </ul>
           </div>
         </div>
-
-        <div class="card projects">
-          <h2>Selected Projects</h2>
-          <ul>
-            <li><a href="https://github.com/yaniv-11/langgraph-tools-chatbot" target="_blank">LangGraph-Tools-Chatbot</a> — AI conversational assistant (LangGraph + Streamlit) with tools integration and LangSmith observability.</li>
-            <li><a href="https://rag-chatbot-hppmxsr7rqebntzaqwzro9.streamlit.app/" target="_blank">VectorTalk (Live)</a> — RAG chatbot (Streamlit) with FAISS + Hugging Face LLM for PDF Q&A.</li>
-            <li><a href="https://github.com/yaniv-11/RAG-chatbot" target="_blank">RAG Chatbot (Github)</a> — RAG pipeline & vector store implementation.</li>
-            <li><a href="https://github.com/yaniv-11/Blend-Attire" target="_blank">Blend Attire</a> — Hybrid outfit recommender combining collaborative filtering and CNN visual models.</li>
-          </ul>
-        </div>
-
-        <div class="card">
-          <h2>Hackathons & Highlights</h2>
-          <ul>
-            <li>Deforestation Tracking System — Satellite imagery processed with OpenCV & HSV (92% accuracy).</li>
-            <li>Prediction Model — EDA, feature engineering and XGBoost (~80% accuracy).</li>
-          </ul>
-        </div>
-
-        <div class="card">
-          <h2>Certifications</h2>
-          <ul>
-            <li>OCI Generative AI Professional — Oracle</li>
-            <li>AI Fundamentals — IBM</li>
-            <li>Python — Geeks for Geeks</li>
-            <li>Data Analytics Essentials — Cisco</li>
-          </ul>
-        </div>
-
-        <footer>
-          <div>Designed &amp; maintained by Vinay S • <a href="https://github.com/yaniv-11" style="color:var(--accent)">github.com/yaniv-11</a></div>
-        </footer>
       </div>
+    </section>
+
+    <section id="projects" class="section alt">
+      <div class="container">
+        <h2>Selected Projects</h2>
+        <div class="projects-grid">
+          <article class="project card">
+            <h3><a href="https://github.com/yaniv-11/langgraph-tools-chatbot" target="_blank">LangGraph-Tools-Chatbot</a></h3>
+            <p>AI conversational assistant (LangGraph + Streamlit) with tools integration and LangSmith observability.</p>
+            <p class="meta">Tech: LangGraph, Streamlit, LangSmith</p>
+          </article>
+
+          <article class="project card">
+            <h3><a href="https://rag-chatbot-hppmxsr7rqebntzaqwzro9.streamlit.app/" target="_blank">VectorTalk (Live)</a></h3>
+            <p>RAG chatbot using FAISS + Hugging Face models for PDF Q&A and document search.</p>
+            <p class="meta">Tech: FAISS, HuggingFace, Streamlit</p>
+          </article>
+
+          <article class="project card">
+            <h3><a href="https://github.com/yaniv-11/Blend-Attire" target="_blank">Blend Attire</a></h3>
+            <p>Hybrid outfit recommender combining collaborative filtering and CNN-based visual features.</p>
+            <p class="meta">Tech: PyTorch, CNNs, recommender systems</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="section container">
+      <h2>Experience</h2>
+      <div class="timeline">
+        <div class="timeline-item card">
+          <h3>AI &amp; ML Intern — Edunet Foundation</h3>
+          <span class="date">Jul 2025 — Aug 2025</span>
+          <ul>
+            <li>Built end-to-end ML pipelines from preprocessing to evaluation and reporting.</li>
+            <li>Automated model selection and benchmarking processes.</li>
+          </ul>
+        </div>
+
+        <div class="timeline-item card">
+          <h3>Python Programming Intern — Vault of Codes</h3>
+          <span class="date">Jun 2025</span>
+          <ul>
+            <li>Built a task-tracker web app (Flask + SQLite) with REST endpoints and authentication flows.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section alt">
+      <div class="container">
+        <h2>Contact</h2>
+        <div class="card contact-card">
+          <p>Want to collaborate or chat about ML projects? reach out —</p>
+          <p><strong>Email:</strong> <a href="mailto:vinays.6360@gmail.com">vinays.6360@gmail.com</a></p>
+          <div class="socials">
+            <a href="https://github.com/yaniv-11" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/in/vinay-s-354b7b2b2" target="_blank">LinkedIn</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>© <span id="year"></span> Vinay S • Built with ♥ • <a href="https://github.com/yaniv-11" target="_blank">GitHub</a></small>
     </div>
-  </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
