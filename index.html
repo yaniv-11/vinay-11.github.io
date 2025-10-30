@@ -4,240 +4,209 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vinay S | AI/ML Engineer</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header>
-        <nav class="container">
-            <a href="#home" class="logo">Vinay S</a>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="#home" class="brand">Vinay S</a>
+            <nav class="nav">
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#experience">Experience</a>
+                <a href="#contact">Contact</a>
+                <a href="vinay_resume.pdf" class="btn" download>Resume</a>
+            </nav>
+            <button class="nav-toggle">☰</button>
+        </div>
     </header>
 
     <main>
 
-        <section id="home" class="hero container">
-            <div class="hero-content">
-                <h1>Vinay S</h1>
-                <h2>AI/ML Engineer</h2>
-                <p class="subtitle">
-                    Expertise in building production-ready multi-agent systems, LLM applications, and end-to-end ML pipelines. 
-                    Proficient in LangChain, LangGraph, and modern AI frameworks.
-                </p>
+        <section class="hero">
+            <div class="container hero-grid">
+                <div class="hero-left">
+                    <h1>Hi, I'm Vinay S</h1>
+                    <h2 class="accent">AI/ML Engineer</h2>
+                    <p class="lead">
+                        Expertise in building production-ready multi-agent systems, LLM applications, and end-to-end ML pipelines. Proficient in LangChain, LangGraph, and modern AI frameworks.
+                    </p>
+                    <a href="#projects" class="primary">View Projects</a>
+                    <a href="vinay_resume.pdf" class="ghost" download>Download Resume</a>
+                </div>
                 
-                <div class="social-links">
-                    <a href="https://github.com/yaniv-11" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/vinay-s-354b7b2b2/" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="mailto:vinays.6360@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+                <div class="profile-card">
+                    <h3>Contact Me</h3>
+                    <div class="links">
+                        <a href="https://github.com/yaniv-11" target="_blank">GitHub</a> |
+                        <a href="https://www.linkedin.com/in/vinay-s-354b7b2b2/" target="_blank">LinkedIn</a> |
+                        <a href="mailto:vinays.6360@gmail.com">Email</a>
+                    </div>
+                    <a href="vinay_resume.pdf" class="download" download>Download Resume</a>
                 </div>
             </div>
         </section>
 
-        <section id="about" class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>
-                        I am an AI/ML Engineer passionate about developing intelligent systems that solve real-world problems. My focus is on large language models (LLMs), agent-based architectures, and deploying scalable machine learning solutions. 
-                        I have hands-on experience in the complete project lifecycle, from data preprocessing and feature engineering to model evaluation and deployment using tools like Streamlit and Flask.
-                    </p>
-                    <h3><i class="fa-solid fa-graduation-cap"></i> Education</h3>
-                    <p>
-                        <strong>B.E, Computer Science & Engineering (AI & ML)</strong><br>
-                        Sai Vidya Institute of Technology<br>
-                        CGPA: 8.6
-                    </p>
-                </div>
-                <div class="about-certs">
-                    <h3><i class="fa-solid fa-certificate"></i> Certifications</h3>
-                    <ul>
-                        <li>OCI Generative AI professional - Oracle</li>
-                        <li>AI Fundamentals - IBM</li>
-                        <li>Data Analytics Essentials - Cisco</li>
-                        <li>Python - Geeks for Geeks</li>
-                    </ul>
-                </div>
-            </div>
+        <section class="section container" id="about">
+            <h2>About Me</h2>
+            <p>
+                I am an AI/ML Engineer passionate about developing intelligent systems that solve real-world problems. My focus is on large language models (LLMs), agent-based architectures, and deploying scalable machine learning solutions. 
+                I have hands-on experience in the complete project lifecycle, from data preprocessing and feature engineering to model evaluation and deployment using tools like Streamlit and Flask.
+            </p>
+            
+            <h3 style="margin-top: 2rem;">Education</h3>
+            <p>
+                <strong>B.E, Computer Science & Engineering (AI & ML)</strong><br>
+                Sai Vidya Institute of Technology | CGPA: 8.6
+            </p>
+
+            <h3 style="margin-top: 2rem;">Certifications</h3>
+            <ul style="color: var(--muted); margin-left: 1rem;">
+                <li>OCI Generative AI professional - Oracle</li>
+                <li>AI Fundamentals - IBM</li>
+                <li>Data Analytics Essentials - Cisco</li>
+                <li>Python - Geeks for Geeks</li>
+            </ul>
         </section>
 
-        <section id="skills" class="container">
-            <h2 class="section-title">Technical Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-category">
+        <section class="section container" id="skills">
+            <h2>Technical Skills</h2>
+            <div class="cards-grid">
+                <div class="card">
                     <h3>LLM & Agents</h3>
-                    <div class="skills-list">
+                    <div class="tags">
                         <span>LangChain</span><span>LangGraph</span><span>RAG</span><span>Agents</span>
                         <span>Google Gemini</span><span>LangSmith</span><span>FAISS</span><span>ChromaDB</span>
                     </div>
                 </div>
-                <div class="skill-category">
+                <div class="card">
                     <h3>AI/ML Frameworks</h3>
-                    <div class="skills-list">
+                    <div class="tags">
                         <span>TensorFlow</span><span>PyTorch</span><span>scikit-learn</span><span>Keras</span>
                         <span>XGBoost</span><span>CNN</span><span>RNN</span><span>LSTM</span><span>Transformers</span>
                     </div>
                 </div>
-                <div class="skill-category">
+                <div class="card">
                     <h3>Programming & Data</h3>
-                    <div class="skills-list">
+                    <div class="tags">
                         <span>Python</span><span>SQL</span><span>MySQL</span><span>MongoDB</span><span>SQLite</span>
                     </div>
                 </div>
-                <div class="skill-category">
+                <div class="card">
                     <h3>Deployment & Tools</h3>
-                    <div class="skills-list">
+                    <div class="tags">
                         <span>Streamlit</span><span>Flask</span><span>REST APIs</span><span>Streamlit Cloud</span>
                     </div>
                 </div>
-                <div class="skill-category">
+                <div class="card">
                     <h3>Data Science Practices</h3>
-                    <div class="skills-list">
+                    <div class="tags">
                         <span>Data Preprocessing</span><span>Feature Engineering</span><span>EDA</span><span>Model Evaluation</span>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="projects" class="container">
-            <h2 class="section-title">Projects</h2>
+        <section class="section container" id="projects">
+            <h2>Projects</h2>
             <div class="projects-grid">
 
-                <div class="project-card">
+                <div class="card project">
                     <h3>SHOPPING-DUO-AGENT | Multi-Agent AI System</h3>
-                    <p>
-                        A multi-agent AI system using LangChain and Google Gemini. Three agents (Deal Hunter, Critic, Final Analyst) collaborate to recommend electronic products by analyzing price, performance, and user reviews.
-                    </p>
-                    <p>
-                        Features JSON-based communication and LangSmith tracing for end-to-end monitoring and debugging.
-                    </p>
-                    <div class="project-tags">
-                        <span>LangChain</span><span>Google Gemini</span><span>Multi-Agent</span><span>LangSmith</span><span>JSON</span>
+                    <p>A multi-agent AI system using LangChain and Google Gemini with three agents (Deal Hunter, Critic, Final Analyst) collaborating to recommend products.</p>
+                    <div class="tags">
+                        <span>LangChain</span><span>Google Gemini</span><span>Multi-Agent</span>
                     </div>
-                    <div class="project-links">
-                        <a href="https://github.com/yaniv-11" target="_blank" class="btn-project"><i class="fa-brands fa-github"></i> GitHub</a>
+                    <div class="meta">
+                        <a href="https://github.com/yaniv-11" target="_blank">View on GitHub</a>
                     </div>
                 </div>
-
-                <div class="project-card">
+                
+                <div class="card project">
                     <h3>VectorTalk | RAG chatbot</h3>
-                    <p>
-                        An interactive Streamlit application allowing users to chat with their PDF documents.
-                        Implements a complete RAG pipeline with LangChain, a FAISS vector store, and a Hugging Face LLM (DeepSeek) for context-aware responses.
-                    </p>
-                    <p>
-                        Reduces hallucinations by grounding responses in retrieved text chunks.
-                    </p>
-                    <div class="project-tags">
-                        <span>RAG</span><span>LangChain</span><span>Streamlit</span><span>FAISS</span><span>Hugging Face</span>
+                    <p>An interactive Streamlit app to chat with PDF documents using a RAG pipeline with LangChain, FAISS, and a Hugging Face LLM (DeepSeek).</p>
+                    <div class="tags">
+                        <span>RAG</span><span>LangChain</span><span>Streamlit</span><span>FAISS</span>
                     </div>
-                    <div class="project-links">
-                        <a href="https://github.com/yaniv-11" target="_blank" class="btn-project"><i class="fa-brands fa-github"></i> GitHub</a>
-                        </div>
+                    <div class="meta">
+                        <a href="https://github.com/yaniv-11" target="_blank">View on GitHub</a>
+                    </div>
                 </div>
 
-                <div class="project-card">
+                <div class="card project">
                     <h3>AUTOMATED-LEUKEMIA-DIAGNOSIS</h3>
-                    <p>
-                        Ensemble deep learning model (EfficientNetB3, ResNet152V2, ConvNeXtTiny) achieving 92.25% test accuracy for leukemia detection from blood cell images.
-                    </p>
-                    <p>
-                        Deployed as a production-ready Streamlit application for real-time diagnosis with confidence scores.
-                    </p>
-                    <div class="project-tags">
-                        <span>Deep Learning</span><span>Ensemble Model</span><span>TensorFlow</span><span>Streamlit</span><span>CV</span>
+                    <p>Ensemble deep learning model (EfficientNetB3, ResNet152V2) achieving 92.25% test accuracy, deployed as a Streamlit application.</p>
+                    <div class="tags">
+                        <span>Deep Learning</span><span>Ensemble</span><span>Streamlit</span><span>CV</span>
                     </div>
-                    <div class="project-links">
-                        <a href="https://github.com/yaniv-11" target="_blank" class="btn-project"><i class="fa-brands fa-github"></i> GitHub</a>
+                    <div class="meta">
+                        <a href="https://github.com/yaniv-11" target="_blank">View on GitHub</a>
                     </div>
                 </div>
-
-                <div class="project-card">
+                
+                <div class="card project">
                     <h3>LangGraph-Tools-Chatbot</h3>
-                    <p>
-                        A conversational assistant built with LangGraph and Streamlit that integrates tools like Wikipedia, DuckDuckGo, and a calculator for real-time, accurate responses.
-                    </p>
-                    <p>
-                        Features multi-threaded conversations, SQLite persistence, and LangSmith observability.
-                    </p>
-                    <div class="project-tags">
-                        <span>LangGraph</span><span>Streamlit</span><span>Tool Use</span><span>SQLite</span><span>LangSmith</span>
+                    <p>A conversational assistant with LangGraph and Streamlit, integrating tools like Wikipedia, DuckDuckGo, and a calculator for real-time answers.</p>
+                    <div class="tags">
+                        <span>LangGraph</span><span>Streamlit</span><span>Tool Use</span><span>SQLite</span>
                     </div>
-                    <div class="project-links">
-                        <a href="https://github.com/yaniv-11" target="_blank" class="btn-project"><i class="fa-brands fa-github"></i> GitHub</a>
+                    <div class="meta">
+                        <a href="https://github.com/yaniv-11" target="_blank">View on GitHub</a>
                     </div>
                 </div>
-
             </div>
-            
-            <h3 class="subsection-title">Hackathons</h3>
-            <div class="hackathon-list">
-                <div class="hackathon-item">
-                    <strong>Deforestation Tracking System:</strong> Processed satellite imagery with OpenCV & HSV (92% accuracy) for deforestation detection and automated vegetation cover analysis.
+
+            <h2 style="margin-top: 3rem;">Hackathons</h2>
+            <div class="cards-grid">
+                <div class="card">
+                    <h3>Deforestation Tracking System</h3>
+                    <p>Processed satellite imagery with OpenCV & HSV (92% accuracy) for deforestation detection and automated vegetation cover analysis.</p>
                 </div>
-                <div class="hackathon-item">
-                    <strong>Prediction Model:</strong> Cleaned datasets, performed EDA & feature engineering, and built an XGBoost model (~80% accuracy).
+                <div class="card">
+                    <h3>Prediction Model</h3>
+                    <p>Cleaned datasets, performed EDA & feature engineering, and built an XGBoost model with ~80% accuracy.</p>
                 </div>
             </div>
         </section>
 
-        <section id="experience" class="container">
-            <h2 class="section-title">Experience</h2>
+        <section class="section container" id="experience">
+            <h2>Experience</h2>
             <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-date">Jul 2025 - Aug 2025</div>
-                    <div class="timeline-content">
-                        <h3>AI & ML Intern (Remote)</h3>
-                        <p class="company">Edunet Foundation</p>
-                        <ul>
-                            <li>Built an end-to-end ML pipeline covering preprocessing, feature engineering, training & evaluation.</li>
-                            <li>Automated model selection & reporting, reducing evaluation time by ~40% and enabling quicker model comparisons.</li>
-                        </ul>
-                    </div>
+                <div class="card timeline-item">
+                    <span class="date">Jul 2025 - Aug 2025</span>
+                    <h3>AI & ML Intern (Remote)</h3>
+                    <p><strong>Edunet Foundation</strong></p>
+                    <ul>
+                        <li>Built an end-to-end ML pipeline covering preprocessing, feature engineering, training & evaluation.</li>
+                        <li>Automated model selection & reporting, reducing evaluation time by ~40%.</li>
+                    </ul>
                 </div>
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-date">Jun 2025 - Jun 2025</div>
-                    <div class="timeline-content">
-                        <h3>Python Programming Intern (Remote)</h3>
-                        <p class="company">Vault of Codes</p>
-                        <ul>
-                            <li>Built a Task Tracker web app with Flask + SQLite, implementing CRUD operations and REST API integration.</li>
-                        </ul>
-                    </div>
+                <div class="card timeline-item">
+                    <span class="date">Jun 2025 - Jun 2025</span>
+                    <h3>Python Programming Intern (Remote)</h3>
+                    <p><strong>Vault of Codes</strong></p>
+                    <ul>
+                        <li>Built a Task Tracker web app with Flask + SQLite, implementing CRUD operations and REST API integration.</li>
+                    </ul>
                 </div>
             </div>
         </section>
 
-        <section id="contact" class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <p class="contact-subtitle">
-                I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.
-            </p>
-            <div class="contact-methods">
-                <div class="contact-item">
-                    <i class="fa-solid fa-envelope"></i>
+        <section class="section container" id="contact">
+            <h2>Get In Touch</h2>
+            <p>I'm always open to discussing new projects, creative ideas, or opportunities.</p>
+            <div class="cards-grid" style="margin-top: 1.5rem;">
+                <div class="card contact-card">
                     <h3>Email</h3>
                     <a href="mailto:vinays.6360@gmail.com">vinays.6360@gmail.com</a>
                 </div>
-                <div class="contact-item">
-                    <i class="fa-solid fa-phone"></i>
+                <div class="card contact-card">
                     <h3>Phone</h3>
                     <a href="tel:+916360974188">+91 6360974188</a>
                 </div>
-                <div class="contact-item">
-                    <i class="fa-brands fa-linkedin"></i>
+                <div class="card contact-card">
                     <h3>LinkedIn</h3>
                     <a href="https://www.linkedin.com/in/vinay-s-354b7b2b2/" target="_blank">in/vinay-s-354b7b2b2</a>
                 </div>
@@ -246,12 +215,11 @@
 
     </main>
 
-    <footer>
+    <footer class="site-footer">
         <div class="container">
             <p>&copy; 2025 Vinay S. All rights reserved.</p>
         </div>
     </footer>
 
-    <script src="script.js"></script>
-</body>
+    </body>
 </html>
