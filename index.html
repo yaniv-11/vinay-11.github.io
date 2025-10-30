@@ -4,8 +4,86 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vinay S | AI/ML Engineer</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+    
+    <style>
+        :root{
+          --bg:#071027; --card:#071a2a; --muted:#9aa3b2; --accent:#06b6d4; --glass: rgba(255,255,255,0.03);
+          --max-width:1100px;
+          font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+        }
+        *{box-sizing:border-box}
+        html,body{height:100%;margin:0;background:linear-gradient(180deg,#041026,#07122a);color:#e6eef6}
+        .container{max-width:var(--max-width);margin:0 auto;padding:28px}
+        .site-header{position:sticky;top:0;background:rgba(4,8,14,0.45);backdrop-filter: blur(8px);border-bottom:1px solid rgba(255,255,255,0.03); z-index: 10;}
+        .header-inner{display:flex;align-items:center;justify-content:space-between; height: 60px;}
+        .brand{font-weight:700;letter-spacing:0.2px; color: #fff; text-decoration: none;}
+        .nav a{color:var(--muted);text-decoration:none;margin:0 10px;font-weight:600}
+        .nav .btn{background:linear-gradient(90deg,var(--accent),#0ea5a6);padding:8px 12px;border-radius:8px;color:#052025;text-decoration:none;font-weight:700;margin-left:12px}
+        .nav-toggle{display:none;background:none;border:0;color:var(--muted);font-size:18px; cursor: pointer;}
+
+        /* Hero */
+        .hero{padding:48px 0}
+        .hero-grid{display:grid;grid-template-columns:1fr 320px;gap:28px;align-items:center}
+        .hero-left h1{font-size:36px;margin:0 0 12px}
+        .accent{color:var(--accent)}
+        .lead{color:var(--muted);font-size:16px;line-height:1.5}
+        .primary{background:linear-gradient(90deg,var(--accent),#0ea5a6);color:#052025;padding:10px 14px;border-radius:10px;text-decoration:none;margin-right:10px;font-weight:700}
+        .ghost{color:var(--muted);text-decoration:none;padding:10px 14px;border-radius:10px;border:1px solid rgba(255,255,255,0.03)}
+        .profile-card{text-align:center;padding:18px;border-radius:12px;background:linear-gradient(180deg,rgba(255,255,255,0.02),transparent);box-shadow:0 6px 30px rgba(2,6,23,0.6)}
+        .profile-photo{width:140px;height:140px;border-radius:50%;object-fit:cover;border:3px solid rgba(255,255,255,0.04)}
+        .links a{margin:6px; color:var(--accent); text-decoration:none; font-weight:600}
+        .download{display:inline-block;margin-top:10px;padding:8px 12px;border-radius:10px;background:rgba(255,255,255,0.04);text-decoration:none;color:var(--muted)}
+
+        /* Sections */
+        .section{padding:36px 0}
+        .section h2{margin:0 0 12px}
+        .cards-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:12px}
+        .card{background:var(--card);padding:16px;border-radius:12px;box-shadow:0 6px 20px rgba(2,6,23,0.5)}
+        .tags span{display:inline-block;padding:6px 10px;margin:6px 6px 0 0;border-radius:999px;background:rgba(255,255,255,0.03);font-size:13px;color:var(--muted)}
+
+        .projects-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:14px}
+        .project h3{margin:0 0 6px}
+        .meta{color:var(--muted);font-size:13px;margin-top:8px}
+        .meta a {color: var(--accent); text-decoration: none;}
+
+        .timeline{display:grid;gap:12px;margin-top:12px}
+        .timeline-item .date{display:block;color:var(--muted);font-size:13px;margin-bottom:8px}
+
+        /* contact */
+        .contact-card{display:flex;flex-direction:column;gap:8px}
+        .contact-card a {color: var(--accent); text-decoration: none;}
+
+        /* footer */
+        .site-footer{padding:18px 0;color:var(--muted);border-top:1px solid rgba(255,255,255,0.03);text-align:center;margin-top:28px}
+
+        /* responsiveness */
+        @media(max-width:980px){
+          .hero-grid{grid-template-columns:1fr}
+          .cards-grid{grid-template-columns:1fr}
+          .projects-grid{grid-template-columns:1fr}
+          .nav{
+            display:none; /* Start hidden on mobile */
+            position:absolute;
+            top: 60px; /* Height of header */
+            left: 0;
+            right: 0;
+            background: var(--card);
+            flex-direction: column;
+            padding: 1rem;
+            border-bottom: 1px solid rgba(255,255,255,0.03);
+          }
+          .nav.nav-open {
+            display: flex; /* Show when open */
+          }
+          .nav a {
+            display: block; /* Make them full width */
+            margin: 0.5rem 0;
+          }
+          .nav .btn { margin-left: 0; text-align: center;}
+          .nav-toggle{display:inline-block}
+        }
+    </style>
+    </head>
 <body>
 
     <header class="site-header">
@@ -120,7 +198,7 @@
                         <span>LangChain</span><span>Google Gemini</span><span>Multi-Agent</span>
                     </div>
                     <div class="meta">
-                        <a href="https://github.com/yaniv-11" target="_blank">View on GitHub</a>
+                        <a href="https://github.com/yaniv-11/SHOPPING-DUO-AGENT" target="_blank">View on GitHub</a>
                     </div>
                 </div>
                 
@@ -131,7 +209,7 @@
                         <span>RAG</span><span>LangChain</span><span>Streamlit</span><span>FAISS</span>
                     </div>
                     <div class="meta">
-                        <a href="https://github.com/yaniv-11" target="_blank">View on GitHub</a>
+                        <a href="https://github.com/yaniv-11/VectorTalk" target="_blank">View on GitHub</a>
                     </div>
                 </div>
 
@@ -142,7 +220,7 @@
                         <span>Deep Learning</span><span>Ensemble</span><span>Streamlit</span><span>CV</span>
                     </div>
                     <div class="meta">
-                        <a href="https://github.com/yaniv-11" target="_blank">View on GitHub</a>
+                        <a href="https://github.com/yaniv-11/AUTOMATED-LEUKEMIA-DIAGNOSIS" target="_blank">View on GitHub</a>
                     </div>
                 </div>
                 
@@ -153,7 +231,7 @@
                         <span>LangGraph</span><span>Streamlit</span><span>Tool Use</span><span>SQLite</span>
                     </div>
                     <div class="meta">
-                        <a href="https://github.com/yaniv-11" target="_blank">View on GitHub</a>
+                        <a href="https://github.com/yaniv-11/LangGraph-Tools-Chatbot" target="_blank">View on GitHub</a>
                     </div>
                 </div>
             </div>
@@ -221,5 +299,18 @@
         </div>
     </footer>
 
-    </body>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+          const navToggle = document.querySelector('.nav-toggle');
+          const nav = document.querySelector('.nav');
+          
+          if (navToggle) {
+            navToggle.addEventListener('click', () => {
+              nav.classList.toggle('nav-open');
+            });
+          }
+        });
+    </script>
+
+</body>
 </html>
